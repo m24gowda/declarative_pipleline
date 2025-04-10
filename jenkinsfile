@@ -3,7 +3,7 @@ pipeline{
    stages{
      stage('Fetching the code from remote repo'){
          steps {
-          git 'https://github.com/m24gowda/declarative_pipleline.git'
+          git branch: 'main' , url: 'https://github.com/m24gowda/maven_cont.git'
            }
        }
      stage('build phase'){
@@ -19,3 +19,7 @@ pipeline{
      stage('deploy phase'){
          steps{
             echo 'deploy information'
+             } 
+    } 
+  }
+ }
