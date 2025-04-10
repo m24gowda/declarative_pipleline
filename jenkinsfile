@@ -1,0 +1,21 @@
+pipeline{
+   agent any
+   stages{
+     stage('Fetching the code from remote repo'){
+         steps {
+          echo 
+           }
+       }
+     stage('build phase'){
+        steps{
+          echo 'this is a bulid phase'
+        }
+      }
+     stage('testing phase'){
+          steps{
+             echo 'this is a testing stage'
+         }
+       }
+     stage('deploy phase'){
+         steps{
+            echo 'deploy information'
