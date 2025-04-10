@@ -3,7 +3,7 @@ pipeline{
    stages{
      stage('Fetching the code from remote repo'){
          steps {
-          echo 
+          git 'https://github.com/m24gowda/declarative_pipleline.git'
            }
        }
      stage('build phase'){
